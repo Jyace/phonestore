@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#CCFFFF"
+    android:clickable="true"
+			   >
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bg" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="会员登录"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+	 
+    <TableLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:stretchColumns="0"
+        >
+        <TableRow >
+            <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+         <TextView 
+             android:layout_width="60dp"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:text="用户名"/>
+             <EditText
+	            android:id="@+id/userName"
+	            android:layout_width="match_parent"
+	            android:layout_height="38dp"
+	            android:layout_marginTop="5dp"
+	            android:background="@color/white"
+	            android:textSize="14sp"
+	            android:hint="	昵称/邮箱/手机/会员号" />
+         </LinearLayout>
+        </TableRow>
+        
+        
+        <TableRow >
+            <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+         <TextView 
+             android:layout_width="60dp"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:text="密码"/>
+              <EditText 
+	            android:id="@+id/passWord"
+	            android:password="true"
+	            android:layout_width="match_parent"
+	            android:layout_height="38dp"
+	            android:background="@color/white"
+	            android:layout_marginTop="5dp"
+	            android:textSize="14sp"
+	            android:hint="	密码"/>
+         </LinearLayout>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+     <TextView
+	        android:id="@+id/forget"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="5dp"
+	        android:gravity="center_vertical"
+	        android:text="忘记密码？" 
+	        android:textSize="16sp" />
+  
+    <Button 
+	 		    android:id="@+id/login"
+	 		    android:layout_width="fill_parent"
+	            android:layout_height="38dp"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:text="登录"
+	            android:textColor="#FFFFFF"
+	            android:background="@drawable/btn_login_background"
+	            android:textSize="14sp"
+	            android:gravity="center"/>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="100dp"
+	    android:orientation="vertical"
+	    android:background="#CCFFFF">
+              
+	    	<TextView 	
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="50dp"/>
+
+	    	<LinearLayout
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="55dp"
+	    	    android:gravity="center"
+	    	    android:orientation="horizontal" >
+
+	    	    <Button
+	    	        android:id="@+id/regist"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="35dp"
+	    	        android:layout_marginLeft="10dp"
+	    	        android:layout_marginRight="10dp"
+	    	        android:background="@drawable/gray_left"
+	    	        android:gravity="center"
+	    	        android:text="免费注册"
+	    	        android:textColor="#FFFFFF"
+	    	        android:textSize="14sp" />
+
+	    	    <ImageView
+	    	        android:layout_width="2dp"
+	    	        android:layout_height="match_parent"
+	    	        android:layout_gravity="center"
+	    	        android:background="@drawable/gray_line" />
+
+	    	    <Button
+	    	        android:id="@+id/introduce"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="35dp"
+	    	        android:layout_marginLeft="10dp"
+	    	        android:layout_marginRight="10dp"
+	    	        android:background="@drawable/gray_right"
+	    	        android:gravity="center"
+	    	        android:text="用户说明"
+	    	        android:textColor="#FFFFFF"
+	    	        android:textSize="14sp" />
+	    	</LinearLayout>
+
+      </LinearLayout>
+
+	<TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#CCFFFF" />
+
+   </LinearLayout>
+</LinearLayout>

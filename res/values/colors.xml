@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#FFFAFA</color>
+    <color name="blue">#0277ec</color>
+    <color name="black">#000000</color>
+    <color name="head">#ffb10000</color>
+    <color name="lightwhite">#ddd</color>  
+    <color name="trans">#55000000</color>
+    <color name="red">#FF0000</color>
+	<color name="divide">#cccccc</color>
+	<color name="sblue">#1998DD</color>
+	<color name="login_red">#FF4400</color>
+	<color name="login_orange">#FF8000</color>
+</resources>

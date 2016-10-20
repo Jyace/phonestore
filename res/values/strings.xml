@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="app_name">手机商城</string>
+	<string name="home_button_index">爱逛</string>
+	<string name="home_button_category">分类</string>
+	<string name="home_button_search">搜货</string>
+	<string name="home_button_personal">我的</string>
+	<string name="home_title">手机商城</string>
+	<string name="index_tab1">苹果</string>
+	<string name="index_tab2">三星</string>
+	<string name="index_tab3">小米</string>
+	<string name="index_tab4">华为</string>
+	<string name="index_tab5">魅族</string>
+	<string name="indexpage_title">手机商店</string>
+	<string name="indexpage_tab1">最新上市</string>
+	<string name="indexpage_tab2">热销排行</string>
+	<string name="indexpage_tab3">精品推荐</string>
+	<string name="indexpage_tab4">即将上市</string>
+	<string name="indexpage_imagetext">滑动小图片</string>
+	<string name="search_hint">输入搜索的宝贝名</string>
+</resources>

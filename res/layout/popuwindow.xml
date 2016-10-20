@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <Button 
+        android:id="@+id/bt_aboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="关于我们"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="#3C3C3C"
+        />
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"/>
+    
+    <Button 
+        android:id="@+id/bt_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="意见反馈"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="#3C3C3C"
+        />
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"/>
+    <Button 
+        android:id="@+id/bt_versionUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="版本更新"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="#3C3C3C"
+        />
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"/>
+    <Button 
+        android:id="@+id/bt_quitStore"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="退出商城"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="#3C3C3C"
+        />
+
+</LinearLayout>

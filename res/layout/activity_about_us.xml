@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFACD">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFACD"
+    android:orientation="vertical" >
+    
+    <!-- 頂部title -->
+    <RelativeLayout 
+        android:id="@+id/llayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/blue"
+        >
+        
+		<TextView 
+		    android:layout_width="match_parent"
+		    android:layout_height="45dp"
+		    android:gravity="center"
+		    android:text="关于我们"
+		    android:textSize="20sp"
+		    android:textStyle="bold"
+		    android:textColor="@color/white"
+		    android:background="@color/blue"/>
+		
+		<Button 
+            android:id="@+id/bt_back_fromAboutUs"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:background="@drawable/back_buttom_background"/>
+        
+    </RelativeLayout>
+    
+   <ImageView 
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
+       android:scaleType="fitXY"
+       android:src="@drawable/eduask"/>
+   
+   <TextView 
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:gravity="bottom|center_horizontal"
+       android:paddingLeft="20dp"
+       android:text="本商城应用出自《华育国际》"
+       android:textColor="@color/red"
+       android:textSize="18sp"
+       />
+   <TextView 
+       android:layout_width="match_parent"
+       android:layout_height="25dp"
+       android:gravity="center_horizontal"
+       android:paddingLeft="20dp"
+       android:text="2014.12.15安卓班“坑神小组”"
+       android:textColor="@color/red"
+       android:textSize="18sp"
+       />
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_marginTop="10dp"
+       android:gravity="center"
+       android:orientation="horizontal">
+	   <TextView
+	       android:layout_width="100dp" 
+	       android:layout_height="40dp"
+	       android:gravity="center"
+	       android:text="小组成员："
+	       android:textSize="18sp"
+	       android:textColor="@color/white"
+	       android:background="@drawable/yellow_left"/>
+	   <TextView
+	       android:layout_width="100dp" 
+	       android:layout_height="40dp"
+	       android:gravity="center"
+	       android:text="蔡海鹏"
+	       android:textSize="18sp"
+	       android:textColor="@color/white"
+	       android:background="@drawable/yellow_middle"/>
+	   <TextView
+	       android:layout_width="100dp" 
+	       android:layout_height="40dp"
+	       android:gravity="center"
+	       android:text="陈嘉文"
+	       android:textSize="18sp"
+	       android:textColor="@color/white"
+	       android:background="@drawable/yellow_right"/>
+	       
+   </LinearLayout>
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:gravity="center"
+       android:orientation="horizontal">
+	   <TextView
+	       android:layout_width="100dp" 
+	       android:layout_height="40dp"
+	       android:gravity="center"
+	       android:text="郑志广"
+	       android:textSize="18sp"
+	       android:textColor="@color/white"
+	       android:background="@drawable/yellow_left"/>
+	   <TextView
+	       android:layout_width="100dp" 
+	       android:layout_height="40dp"
+	       android:gravity="center"
+	       android:text="陈坤华"
+	       android:textSize="18sp"
+	       android:textColor="@color/white"
+	       android:background="@drawable/yellow_middle"/>
+	   <TextView
+	       android:layout_width="100dp" 
+	       android:layout_height="40dp"
+	       android:gravity="center"
+	       android:text="何基为"
+	       android:textSize="18sp"
+	       android:textColor="@color/white"
+	       android:background="@drawable/yellow_right"/>
+   </LinearLayout>
+   
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="20dp"
+	    android:layout_marginTop="15dp"
+	    android:gravity="center"
+	    android:text="制作日期：2015年5月"
+	    android:textSize="13sp"/>
+	
+	<Button
+	    android:layout_width="wrap_content"
+	    android:layout_height="30dp"
+	    android:layout_gravity="center_horizontal"
+	    android:padding="5dp"
+	    android:text="联系我们"
+	    android:textSize="13sp"
+	    android:textColor="#2A32FB"
+	    android:background="#FFFACD"/>
+</LinearLayout>
+</ScrollView>

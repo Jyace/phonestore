@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.phoneshop.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <!-- android:screenOrientation="portrait"设置为竖频
+        android:configChanges="orientation|keyboardHidden|screenSize" 就能有效避免Activity中oncreat方法的重复加载，  -->
+        
+        <activity android:name="com.phoneshop.activity.LoadActivity"
+            >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.phoneshop.activity.HomeActivity"></activity>
+        <activity android:name="com.phoneshop.activity.PhoneDetailsActivity"></activity>
+        <activity android:name="com.phoneshop.activity.CategoryResultActivity"></activity>
+        <activity android:name="com.phoneshop.activity.AboutUsActivity"></activity>
+        <activity android:name="com.phoneshop.activity.FeedbackActivty"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+        <activity android:name="com.phoneshop.activity.VersionUpdateActivity"></activity>
+        <activity android:name="com.phoneshop.activity.ShoppingCartActivity"></activity>
+    </application>
+</manifest>

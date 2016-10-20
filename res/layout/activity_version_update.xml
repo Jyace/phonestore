@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#EBEBEB">
+    
+    <!-- 顶部title -->
+    <RelativeLayout 
+        android:id="@+id/llayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/blue"
+        >
+        
+		<TextView 
+		    android:layout_width="match_parent"
+		    android:layout_height="45dp"
+		    android:gravity="center"
+		    android:text="版本信息与更新"
+		    android:textSize="20sp"
+		    android:textStyle="bold"
+		    android:textColor="@color/white"
+		    android:background="@color/blue"/>
+		
+		<Button 
+            android:id="@+id/bt_back_fromVersionUpdate"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:background="@drawable/back_buttom_background"/>
+        
+    </RelativeLayout>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="当前版本号"
+            android:textSize="20sp"/>
+        <TextView 
+            android:id="@+id/tv_currentVersion"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingBottom="10dp"
+            android:gravity="center_vertical"
+            android:text="PhoneShop-1.0"
+            android:textSize="16sp"/>
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#9EC0F1"/>
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="最近更新日期"
+            android:textSize="20sp"/>
+        <TextView 
+            android:id="@+id/tv_updateDate"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingBottom="10dp"
+            android:gravity="center_vertical"
+            android:text="2015/5/15"
+            android:textSize="16sp"/>
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#9EC0F1"/>
+        
+    </LinearLayout>
+    
+    <TextView 
+		        android:layout_width="match_parent"
+		        android:layout_height="20dp"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+        
+        <Button 
+            android:id="@+id/bt_checkUpdate"
+            android:layout_width="170dp"
+            android:layout_height="35dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="检查和更新版本"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@drawable/blue_toright"/>
+        
+        <TextView 
+       		android:layout_width="match_parent"
+       		android:layout_height="30dp"
+       		android:paddingLeft="10dp"
+       		android:gravity="center_vertical"
+       		android:text="已是最新版本"
+       		android:textSize="16sp"
+       		android:textColor="#A2A2A2"
+       		/>
+	    <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#9EC0F1"/>
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_gravity="center"
+       		android:text="关于版本号"
+       		android:textSize="13sp"
+       		android:textColor="#0277EC"
+       		android:background="#EBEBEB"/>
+    </LinearLayout>
+</LinearLayout>

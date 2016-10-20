@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+			    xmlns:android="http://schemas.android.com/apk/res/android"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:orientation="vertical" 
+			    android:textColor="#F2F2F2"
+			    android:background="@color/white"
+			    android:clickable="true"
+			   >
+			   
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:background="@drawable/title_bg" >
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:text="收货地址管理"
+              android:textColor="@color/white"
+              android:textSize="18sp"
+              android:textStyle="bold" />
+
+      </LinearLayout>
+    
+    <RelativeLayout 
+         android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="15dp"
+	>
+		
+        <TextView 
+        android:id="@+id/name"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+	    android:text="叶小姐"
+	    android:visibility="gone"
+	  	android:textSize="20sp"
+	    />
+        
+	  <TextView 
+        android:id="@+id/phonenum"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:text="18888888888"
+	    android:visibility="gone"
+	  	android:textSize="20sp"/>
+			    
+  </RelativeLayout>
+  
+    
+    <TextView 
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:text="广东深圳市南山区那头街道大新村默默街道的打算的撒爱的那112"
+        
+        />
+    
+    <TextView
+        android:id="@+id/no_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="还没添加收货地址，点击“编辑”添加吧"
+        android:visibility="gone"
+        android:textColor="@color/red"
+        android:textSize="16sp" 
+       />
+    
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical" >
+     <TextView
+         android:id="@+id/editimage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/edit"
+       />
+
+    <TextView
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="100dp"
+        android:text="编辑" />
+    
+    </LinearLayout>  
+    
+  <ListView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+ 
+</LinearLayout>

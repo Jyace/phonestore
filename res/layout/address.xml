@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    		android:orientation="vertical"
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent"
+			 android:background="#F2F2F2"
+			 android:clickable="true"
+			>
+			
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bg" >
+
+     
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="收货编辑"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    
+
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_marginLeft="3dp"
+			android:layout_marginRight="3dp">
+			<EditText
+			    android:layout_weight="1"
+			    android:id="@+id/truename"
+			    android:hint="请输入收货人姓名"
+			    android:layout_height="wrap_content" 
+			    android:layout_width="fill_parent"/>
+			<EditText
+			    android:layout_weight="1"
+			    android:id="@+id/phonenum"
+			    android:hint="请输入手机号码"
+			    android:layout_height="wrap_content" 
+			    android:layout_width="fill_parent"/>
+			 
+			<EditText
+			    android:layout_weight="1"
+			    android:hint="请输入详细地址"
+			    android:id="@+id/address"
+			    android:layout_height="wrap_content" 
+			    android:layout_width="fill_parent"/>
+			<Button
+			    android:id="@+id/save"
+			    android:layout_weight="1"
+			    android:text="保存"
+			    android:textColor="@android:color/white"
+			    android:background="#FF3300"
+			    android:layout_height="41dp" 
+			    android:layout_width="fill_parent"/>	
+		</LinearLayout>	
+		 <ListView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+		
+</LinearLayout>

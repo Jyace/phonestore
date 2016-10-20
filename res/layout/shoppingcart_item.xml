@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 购物车item布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+    
+    <CheckBox 
+        android:id="@+id/checkBox_shopping_item"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:gravity="center" />
+	
+    <ImageView 
+        android:id="@+id/imageView_shopping_item"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="3dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/iphone_s"/>
+    
+    <!-- 中间文字部分 -->
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        
+        <TextView 
+            android:id="@+id/tv_shopping_phoneName"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="手机型号"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+        
+        <TextView 
+            android:id="@+id/tv_shopping_phonePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="￥500"
+            android:textSize="15sp"
+            android:textColor="@color/red"/>
+        
+        <TextView 
+            android:id="@+id/tv_shopping_surplusNum"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="剩余库存(1000件)"
+            android:textSize="13sp"
+            android:textColor="@color/divide"/>
+    </LinearLayout>
+    
+    <!-- 数量选择框 -->
+     <LinearLayout 
+         android:layout_width="60dp"
+         android:layout_height="85dp"
+         android:layout_marginRight="10dp"
+         android:orientation="vertical"
+         android:background="@color/divide">
+         
+         <Button 
+             android:id="@+id/bt_shopping_add"
+             android:layout_width="match_parent"
+             android:layout_height="20dp"
+             android:gravity="top|center_horizontal"
+             android:text="+"
+             android:textSize="17sp"
+             android:textColor="@color/white"
+             android:textStyle="bold"
+             android:background="@color/divide"/>
+         
+         <EditText
+             android:id="@+id/shoppingNum_editText"
+             android:layout_width="match_parent"
+             android:layout_height="20dp"
+             android:layout_marginLeft="5dp"
+             android:layout_marginRight="5dp"
+             android:gravity="center_horizontal"
+             android:numeric="integer"
+             android:focusable="true"
+             android:text="1"
+             android:textSize="14sp"
+             android:background="@color/white"/>
+         <Button 
+             android:id="@+id/bt_shopping_redu"
+             android:layout_width="match_parent"
+             android:layout_height="20dp"
+             android:gravity="top|center_horizontal"
+             android:text="-"
+             android:textSize="17sp"
+             android:textColor="@color/white"
+             android:textStyle="bold"
+             android:background="@color/divide"/>
+         <TextView 
+             android:layout_width="match_parent"
+             android:layout_height="25dp"
+             android:gravity="bottom|center_horizontal"
+             android:text="购买数量"
+             android:textSize="12sp"
+             android:background="@color/white"/>
+     </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bg" >
+        
+         
+         
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="账户中心"
+            android:layout_marginTop="13dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        
+        <Button 
+             android:id="@+id/bt_changeAccout"
+             android:layout_width="35dp"
+             android:layout_height="30dp"
+             android:layout_margin="5dp"
+             android:layout_alignParentRight="true"
+             android:layout_gravity="center_vertical"
+             android:background="@drawable/user_circle"/>
+   <!--      <TextView
+            android:id="@+id/more"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/login5" /> -->
+
+    </RelativeLayout>
+    
+     
+   <ScrollView 
+	    android:id="@+id/main_scroll"
+	    android:layout_marginTop="10dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" >
+	        
+		<RelativeLayout 
+		   	android:orientation="horizontal"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:gravity="center">
+				
+		    <LinearLayout 
+		        android:id="@+id/llayout_accoutImage"
+	           android:layout_width="match_parent"
+	           android:layout_height="80dp"
+	           android:orientation="horizontal">
+	           <ImageView 
+	               android:layout_width="80dp"
+	               android:layout_height="match_parent"
+	               android:layout_gravity="center_vertical"
+	               android:layout_margin="10dp"
+	               android:scaleType="fitXY"
+	               android:src="@drawable/default_client_head"/>
+	           <TextView 
+	               android:id="@+id/tv_accountName"
+	               android:layout_width="wrap_content"
+	               android:layout_height="match_parent"
+	               android:gravity="center"
+	               android:text="用户名"
+	               android:textSize="16sp"/>
+	       </LinearLayout>
+			<RelativeLayout 
+    			android:id="@+id/firstLayout"
+    			android:layout_below="@+id/llayout_accoutImage"
+    			android:layout_marginTop="5dp"
+    			android:layout_height="wrap_content"
+    			android:layout_width="fill_parent"
+    			android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp">
+				
+			    <TextView
+			        android:id="@+id/aboutUs"
+			        android:layout_height="40dp"
+			    	android:layout_width="fill_parent"
+			    	android:drawableRight="@drawable/jiantou"
+			    	android:background="#F2F2F2"
+			    	android:gravity="center_vertical"
+			    	android:textSize="20sp"
+			    	android:text="我的订单"/>
+			</RelativeLayout>
+			<RelativeLayout
+    			android:id="@+id/secondLayout"
+		    	android:layout_below="@+id/firstLayout" 
+    			android:layout_height="wrap_content"
+    			android:drawableRight="@drawable/jiantou"
+    			android:layout_width="fill_parent"
+    			android:layout_marginLeft="5dp"
+    			android:layout_marginTop="1dp"
+				android:layout_marginRight="5dp">
+			    <TextView
+			        android:id="@+id/tv_address"
+			        android:layout_height="40dp"
+			        android:drawableRight="@drawable/jiantou"
+			    	android:layout_width="fill_parent" 
+			    	android:background="#F2F2F2"
+			    	android:gravity="center_vertical"
+			    	android:textSize="20sp"
+			    	android:text="收货地址"/>		   
+			</RelativeLayout>	
+			<RelativeLayout
+    			android:id="@+id/thirdLayout"
+		    	android:layout_below="@+id/secondLayout" 
+    			android:layout_height="wrap_content"
+    			android:drawableRight="@drawable/jiantou"
+    			android:layout_width="fill_parent"
+    			android:layout_marginLeft="5dp"
+    			android:layout_marginTop="1dp"
+				android:layout_marginRight="5dp">
+			    <TextView
+			        android:id="@+id/tv_myShoppingCart"
+			        android:layout_height="40dp"
+			        android:drawableRight="@drawable/jiantou"
+			    	android:layout_width="fill_parent" 
+			    	android:background="#F2F2F2"
+			    	android:gravity="center_vertical"
+			    	android:textSize="20sp"
+			    	android:text="我的购物车"/>		   
+			</RelativeLayout>	
+	</RelativeLayout>
+</ScrollView>   
+
+</LinearLayout>
+       <ListView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:orientation="horizontal" 
+    android:background="#E3E3E3">
+    
+   <ImageView 
+       android:id="@+id/iv_expandIcon"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+       android:layout_gravity="center_vertical"
+       android:background="@drawable/narrow"
+       android:contentDescription="可缩放列表适配器的父级列表图标"
+       /> 
+       
+   <TextView 
+       android:id="@+id/tv_groupContent"
+       android:layout_width="wrap_content"
+       android:layout_height="40dp"
+       android:layout_marginLeft="10dp"
+       android:text="No data"
+       android:textSize="16sp"
+       android:gravity="center"
+       />
+   
+</LinearLayout>
